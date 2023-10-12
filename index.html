@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <div class="inner"> -->
+    <header class="header inner">
+      <h1 class="header__title">Путь JavaScript</h1>
+      <div class="header__block-info">
+        <div class="header__image-box">
+          <img class="header__image" src="./images/books-1.png" />
+        </div>
+        <p class="header__description">
+          Можно выделить три основных направления для прогресса JavaScript
+        </p>
+      </div>
+    </header>
+    <main>
+      <section class="quote inner">
+        <h2 class="quote__title">Серверный JavaScript</h2>
+        <div class="quote__box">
+          <img src="./images/quote.svg" />
+          <p class="quote__description">
+            Разработчики и клиенты часто неправильно понимают, что такое
+            система. Они видят графический интерфейс и думают, что он и есть
+            система. Они определяют систему в терминах графического интерфейса и
+            считают, что должны сразу начать работу с графическим интерфейсом.
+            Они не понимают важнейшего принципа: ввод/вывод не важен.<span>— Р. Мартин</span>
+          </p>
+        </div>
+      </section>
+      <section class="advert">
+        <div class="advert__block">
+          <p class="advert__description">
+            Реклама на <a href="#">blabla.com</a>
+          </p>
+          <div class="advert__image"></div>
+        </div>
+      </section>
+      <section class="conclusion inner">
+        <h2 class="conclusion__title">Заключение</h2>
+        <p class="conclusion__description">
+          Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое
+          устройство диссонирует лирический субъект. Абстрактное высказывание
+          пространственно просветляет деструктивный символ. Ямб, несмотря на то,
+          что все эти характерологические черты отсылают не к единому образу
+          нарратора, интегрирует мифопоэтический хронотоп. Действительно,
+          ударение приводит палимпсест. Контрапункт приводит ритм.
+        </p>
+      </section>
+      <section class="reviews">
+        <div class="reviews__block inner">
+          <h2 class="reviews__title">Оцените статью</h2>
+          <div class="rating-area">
+            <input type="radio" id="star-5" name="rating" value="5">
+            <label for="star-5" title="Оценка «5»"></label>	
+            <input type="radio" id="star-4" name="rating" value="4">
+            <label for="star-4" title="Оценка «4»"></label>    
+            <input type="radio" id="star-3" name="rating" value="3">
+            <label for="star-3" title="Оценка «3»"></label>  
+            <input type="radio" id="star-2" name="rating" value="2">
+            <label for="star-2" title="Оценка «2»"></label>    
+            <input type="radio" id="star-1" name="rating" value="1">
+            <label for="star-1" title="Оценка «1»"></label>
+          </div>
+          <!-- <div class="reviews__rate">
+            <img src="./images/star.svg" />
+            <img src="./images/star.svg" />
+            <img src="./images/star.svg" />
+            <img src="./images/star.svg" />
+            <img src="./images/star__empty.svg" />
+          </div> -->
+          <p class="reviews__comment">Добавить комментарий к книге</p>
+          <form class="reviews__form">
+            <div class="reviews__block_info">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                minlength="4"
+                maxlength="8"
+                size="10"
+                placeholder="Имя"
+              />
+              <input
+                type="email"
+                id="email"
+                name="login"
+                placeholder="E-mail"
+              />
+              <div class="dropdown">
+                <button
+                  class="dropdown__button select__category ordering__data-dropdown"
+                >
+                  Выберите книгу
+                </button>
+                <ul class="dropdown__list">
+                  <li class="dropdown__list-item" data-value="category1">
+                    <span>JavaScript ниндзя</span>
+                  </li>
+                  <li class="dropdown__list-item" data-value="category2">
+                    <span>Pragmatic Guide to JavaScript</span>
+                  </li>
+                  <li class="dropdown__list-item" data-value="category3">
+                    <span>Pro JavaScript Techniques</span>
+                  </li>
+                  <li class="dropdown__list-item" data-value="category4">
+                    <span>Выразительный JavaScript</span>
+                  </li>
+                </ul>
+                <input
+                  type="text"
+                  name="select-category"
+                  value=""
+                  class="dropdown__input-hidden"
+                />
+              </div>
+            </div>
+            <textarea id="review" name="review" rows="5" cols="33" placeholder="Ваш отзыв"></textarea
+            >
+            <button class="reviews__button" type="submit" value="Отправить"><span>Отправить</span></button>
+          </form>
+        </div>
+      </section>
+      <section class="swiper__box inner">
+        <h2 class="swiper__box_title">Похожие посты</h2>
+        <div class="swiper-container">
+          <!-- swiper slides -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/img1.jpg" />
+              <p class="swiper-slide--description">
+                События жизненного цикла ReactJS
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./images/img2.jpg" />
+              <p class="swiper-slide--description">
+                CSS Grids. Полное руководство
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./images/img3.jpg" />
+              <p class="swiper-slide--description">
+                Асинхронность в JavaScript
+              </p>
+            </div>
+          </div>
+          <!-- !swiper slides -->
+
+          <!-- next / prev arrows -->
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+          <!-- !next / prev arrows -->
+
+          <!-- pagination dots -->
+          <div class="swiper-pagination"></div>
+          <!-- !pagination dots -->
+        </div>
+      </section>
+    </main>
+    <!-- </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
